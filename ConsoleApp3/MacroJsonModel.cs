@@ -45,10 +45,6 @@ namespace ConsoleApp3
 
         public static string CreateMacroJson(string name, string url, string target)
         {
-            /*
-                string json = "{\"value\":{\"macroAlias\":\"GWCTAButton\",\"macroParamsDictionary\":{\"ctaLink\":[{\"name\":\">>> Find the right membership for you\",\"url\":\"/become-a-member/ciht-membership-for-individuals/\",\"icon\":\"icon-link\",\"published\":true,\"target\":\"_blank\"}],\"cssButton\":\"\"}},\"editor\":{\"alias\":\"macro\",\"view\":\"macro\"},\"styles\":null,\"config\":null}";
-            */
-
             MacroJsonModel rootObject = new MacroJsonModel()
             {
                 Value = new Value()

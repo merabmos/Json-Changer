@@ -51,13 +51,11 @@ try
     foreach (var item in jsons)
     {
         var root = WidgetJsonModel.CreateWidgetModel(item);
-/*        
-        MacroJsonModel.CreateMacroJson(
+        
+        var newJson =  MacroJsonModel.CreateMacroJson(
             root.Value[0].CtaLink.Value.Name,
             root.Value[0].CtaLink.Value.Url,
-            root.Value[0].CtaLink.Value.Target);*/
-
-        Console.WriteLine(item);
+            root.Value[0].CtaLink.Value.Target);
     }
 }
 catch (Exception ex)
