@@ -1,0 +1,958 @@
+{
+  "name": "1 column layout",
+  "sections": [
+    {
+      "grid": "12",
+      "rows": [
+        {
+          "name": "2 equal columns",
+          "id": "16067793-73da-df04-9aad-16bc2a73ff37",
+          "areas": [
+            {
+              "grid": "6",
+              "controls": [
+                {
+                  "value": "<h1 style=\"text-align: right;\">Welcome to<br><strong>CIHT</strong></h1>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "6",
+              "controls": [
+                {
+                  "value": "<h3>The natural home for all people working in highways &amp; transportation infrastructure</h3>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": {},
+          "config": { "class": "greySecWrap top" }
+        },
+        {
+          "name": "2 equal columns",
+          "id": "6f0729f2-aa98-845b-a9b2-4e1f6316ae2a",
+          "areas": [
+            {
+              "grid": "6",
+              "controls": [
+                {
+                  "value": "<p>Join a global network of transport professionals that will support your professional development needs, improve your skills and give you the information to further your career</p>\n<h3>CIHT - inspire, influence, inform and improve</h3>\n<p>CIHT is a respected, chartered professional body that provides transportation professionals with recognition, support and business insights through access to information, intelligence, training and qualifications that they need to accelerate their careers and influence the future of the sector.</p>\n<p>CIHT is the only organisation to offer the full range of highways and transportation qualifications including Chartered Engineer and, uniquely Chartered Transport Planning Professional.</p>\n<p>Our members benefit from a range of services that enable them to improve themselves through maintaining high standards that are reflected in improved transport and infrastructure solutions.</p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "6",
+              "controls": [
+                {
+                  "value": "<iframe width=\"360\" height=\"203\" src=\"https://www.youtube.com/embed/13ng_y5hZEk?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+                  "editor": {
+                    "alias": "embed",
+                    "view": "embed"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": "<p>   </p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": "<p>Join thousands other professionals just like you who are getting ahead with <a data-udi=\"umb://document/55d9424b08c2463b82835439b4eda51e\" href=\"/{localLink:umb://document/55d9424b08c2463b82835439b4eda51e}\" title=\"CIHT Membership for Individuals\">CIHT membership</a>.</p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": {
+                    "macroAlias": "GWCTAButton",
+                    "macroParamsDictionary": {
+                      "ctaLink": "[{&quot;name&quot;:&quot;&gt;&gt;&gt; Find the right membership for you&quot;,&quot;url&quot;:&quot;/become-a-member/ciht-membership-for-individuals/&quot;,&quot;icon&quot;:&quot;icon-link&quot;,&quot;published&quot;:true,&quot;target&quot;:&quot;_blank&quot;}]",
+                      "cssButton": ""
+                    }
+                  },
+                  "editor": {
+                    "alias": "macro",
+                    "view": "macro"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": null,
+          "config": null
+        },
+        {
+          "name": "Headline",
+          "id": "49ec0da3-a7ac-c733-9104-2b405c6e2417",
+          "areas": [
+            {
+              "grid": "12",
+              "controls": [
+                {
+                  "value": "<p>    </p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": "<h3 style=\"text-align: center;\">Discuss your membership options with us today</h3>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": null,
+          "config": null
+        },
+        {
+          "name": "2 equal columns",
+          "id": "8a1d118f-344e-a5e1-3590-747201f8bb1b",
+          "areas": [
+            {
+              "grid": "6",
+              "controls": [
+                {
+                  "value": "<h3 style=\"text-align: center;\"><strong>Call ?+44 020 7336 1555??? (Option 1)</strong></h3>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "6",
+              "controls": [
+                {
+                  "value": "<p style=\"text-align: center;\"><strong><a data-udi=\"umb://document/84d98385d5de40a9b008938547c2d1da\" href=\"/{localLink:umb://document/84d98385d5de40a9b008938547c2d1da}\" title=\"Membership Enquiry Form\" class=\"btn-default btn btn-grad \">&gt;&gt;&gt; Make an enquiry today</a> </strong></p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": {},
+          "config": { "class": "greySecWrap" }
+        },
+        {
+          "name": "Headline",
+          "id": "06865341-7f9b-737d-edcb-d1dbbfce974d",
+          "areas": [
+            {
+              "grid": "12",
+              "controls": [
+                {
+                  "value": "<h2>CIHT Learn</h2>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": "<p><a rel=\"noopener noreferrer\" href=\"https://www.cihtlearn.org.uk/\" target=\"_blank\">CIHT Learn</a><span> </span>is our new, digital learning platform, designed to help you progress your highways, transport and infrastructure career by delivering the insights you need, when you need them, your way.</p>\n<p>It is a unique combination of online courses and other resources such as events, webinars, podcasts and case studies, personalised to your member preferences.</p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": {
+                    "macroAlias": "GWCTAButton",
+                    "macroParamsDictionary": {
+                      "ctaLink": "[{&quot;name&quot;:&quot;&gt;&gt;&gt; Access now&quot;,&quot;url&quot;:&quot;https://www.cihtlearn.org.uk/&quot;,&quot;icon&quot;:&quot;icon-link&quot;,&quot;published&quot;:true}]",
+                      "cssButton": ""
+                    }
+                  },
+                  "editor": {
+                    "alias": "macro",
+                    "view": "macro"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": null,
+          "config": null
+        },
+        {
+          "name": "Headline",
+          "id": "f76159c6-a7f2-3f12-6e98-d186e884727c",
+          "areas": [
+            {
+              "grid": "12",
+              "controls": [
+                {
+                  "value": "<p>   </p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": null,
+          "config": null
+        },
+        {
+          "name": "4 columns",
+          "id": "59762c6d-5763-2dcd-865c-c8bb0b9fe996",
+          "areas": [
+            {
+              "grid": "3",
+              "controls": [
+                {
+                  "value": "<h3>Listen to a CIHT Podcast</h3>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": "<p>Be inspired, hear the latest thought leadership and get the latest on the current hot topics.</p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": {
+                    "macroAlias": "GWCTAButton",
+                    "macroParamsDictionary": {
+                      "ctaLink": "[{&quot;name&quot;:&quot;Podcasts&quot;,&quot;url&quot;:&quot;/knowledge-resource-centre/resources/podcasts/&quot;,&quot;icon&quot;:&quot;icon-link&quot;,&quot;published&quot;:true}]",
+                      "cssButton": ""
+                    }
+                  },
+                  "editor": {
+                    "alias": "macro",
+                    "view": "macro"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "3",
+              "controls": [
+                {
+                  "value": "<h3>Attend a CIHT Webinar</h3>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": "<p>Be informed and inspired. Get the latest thought leadership delivered to your desktop.</p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": {
+                    "macroAlias": "GWCTAButton",
+                    "macroParamsDictionary": {
+                      "ctaLink": "[{&quot;name&quot;:&quot;Find an event&quot;,&quot;url&quot;:&quot;https://www.ciht.org.uk/search-results/?events=1&amp;search=#/?filters=%7B%22Region%22:%22519796,519797,570599,567799,567808,567980,568279,570492,589329,519795,567906,571303,9517,9345,9346,9520,9327,9343,9355,9514,9513,519910,9519,9518,568111,567979%22,%22ContentType%22:%22%22,%22Interests%22:%22%22,%22Upcoming%22:%22True%22,%22Current%22:%22True%22,%22Past%22:%22False%22%7D&quot;,&quot;icon&quot;:&quot;icon-link&quot;,&quot;published&quot;:true}]",
+                      "cssButton": ""
+                    }
+                  },
+                  "editor": {
+                    "alias": "macro",
+                    "view": "macro"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "3",
+              "controls": [
+                {
+                  "value": "<h3>Get Qualified</h3>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": "<p><span>Empower yourself with the skills, best practice and knowledge to take your career further</span></p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": {
+                    "macroAlias": "GWCTAButton",
+                    "macroParamsDictionary": {
+                      "ctaLink": "[{&quot;name&quot;:&quot;Find out more&quot;,&quot;url&quot;:&quot;/professional-development/get-qualified/&quot;,&quot;icon&quot;:&quot;icon-link&quot;,&quot;published&quot;:true}]",
+                      "cssButton": ""
+                    }
+                  },
+                  "editor": {
+                    "alias": "macro",
+                    "view": "macro"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "3",
+              "controls": [
+                {
+                  "value": "<h3>Gain CPD</h3>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": "<p>Develop your CPD with CIHT and enhance your career prospects.<br><br></p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": {
+                    "macroAlias": "GWCTAButton",
+                    "macroParamsDictionary": {
+                      "ctaLink": "[{&quot;name&quot;:&quot;Find out more&quot;,&quot;url&quot;:&quot;/professional-development/get-ahead/continuing-professional-development/&quot;,&quot;icon&quot;:&quot;icon-link&quot;,&quot;published&quot;:true}]",
+                      "cssButton": ""
+                    }
+                  },
+                  "editor": {
+                    "alias": "macro",
+                    "view": "macro"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": null,
+          "config": null
+        },
+        {
+          "name": "Headline",
+          "id": "de6ea88d-a84c-98d2-c8e6-e79bc700ab2f",
+          "areas": [
+            {
+              "grid": "12",
+              "controls": [
+                {
+                  "value": "<p>  </p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": "<h2>Already a member?</h2>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": null,
+          "config": null
+        },
+        {
+          "name": "4 columns",
+          "id": "fcec7330-8b12-4561-ddd8-8df66e525bbf",
+          "areas": [
+            {
+              "grid": "3",
+              "controls": [
+                {
+                  "value": "<h3>Manage your membership</h3>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": {
+                    "macroAlias": "GWCTAButton",
+                    "macroParamsDictionary": {
+                      "ctaLink": "[{&quot;name&quot;:&quot;Visit MyCIHT&quot;,&quot;url&quot;:&quot;/myciht/home/&quot;,&quot;icon&quot;:&quot;icon-link&quot;,&quot;published&quot;:true}]",
+                      "cssButton": ""
+                    }
+                  },
+                  "editor": {
+                    "alias": "macro",
+                    "view": "macro"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "3",
+              "controls": [
+                {
+                  "value": "<h3>Update your preferences</h3>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": {
+                    "macroAlias": "GWCTAButton",
+                    "macroParamsDictionary": {
+                      "ctaLink": "[{&quot;name&quot;:&quot;Update now&quot;,&quot;url&quot;:&quot;/myciht/information/&quot;,&quot;icon&quot;:&quot;icon-link&quot;,&quot;published&quot;:true}]",
+                      "cssButton": ""
+                    }
+                  },
+                  "editor": {
+                    "alias": "macro",
+                    "view": "macro"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "3",
+              "controls": [
+                {
+                  "value": "<h3>Renew your membership</h3>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": {
+                    "macroAlias": "GWCTAButton",
+                    "macroParamsDictionary": {
+                      "ctaLink": "[{&quot;name&quot;:&quot;Renew today&quot;,&quot;url&quot;:&quot;/myciht/financials/&quot;,&quot;icon&quot;:&quot;icon-link&quot;,&quot;published&quot;:true}]",
+                      "cssButton": ""
+                    }
+                  },
+                  "editor": {
+                    "alias": "macro",
+                    "view": "macro"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "3",
+              "controls": [
+                {
+                  "value": "<h3><span class=\"blue\">Access CIHT Connect</span></h3>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": {
+                    "macroAlias": "GWCTAButton",
+                    "macroParamsDictionary": {
+                      "ctaLink": "[{&quot;name&quot;:&quot;Be part of the conversation&quot;,&quot;url&quot;:&quot;https://connect.ciht.org.uk/&quot;,&quot;icon&quot;:&quot;icon-link&quot;,&quot;published&quot;:true}]",
+                      "cssButton": ""
+                    }
+                  },
+                  "editor": {
+                    "alias": "macro",
+                    "view": "macro"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": null,
+          "config": null
+        },
+        {
+          "name": "Headline",
+          "id": "062aeb69-1bc1-9c63-3137-b32ae5aaa811",
+          "areas": [
+            {
+              "grid": "12",
+              "controls": [
+                {
+                  "value": "<p>   </p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": null,
+          "config": null
+        },
+        {
+          "name": "Article Two Col",
+          "id": "8db00940-f213-ec6a-de83-11e72831092c",
+          "areas": [
+            {
+              "grid": "6",
+              "controls": [
+                {
+                  "value": "<h2 style=\"text-align: right;\">Latest<br><strong>Featured News</strong></h2>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "6",
+              "controls": [
+                {
+                  "value": "<p style=\"text-align: left;\"><strong>Please find the featured highways &amp; Transportation related <br>news below.</strong></p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "12",
+              "controls": [
+                {
+                  "value": {
+                    "macroAlias": "NewsListingSlider",
+                    "macroParamsDictionary": {
+                      "chooseNews": "0",
+                      "newsItem": "",
+                      "regions": "9343",
+                      "bokTerms": "",
+                      "interests": "",
+                      "pastNews": "1",
+                      "currentNews": "1",
+                      "upcomingNews": "1",
+                      "buttonText": "See All News",
+                      "setLinkManually": "0",
+                      "buttonLink": "",
+                      "defaultImage": "umb://media/6222c7358f3e43d180d9df5fce2c4cb2",
+                      "buttonStyle": "blue"
+                    }
+                  },
+                  "editor": {
+                    "alias": "macro",
+                    "view": "macro"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": "<p>   </p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": {},
+          "config": { "class": "whiteSecWrap" }
+        },
+        {
+          "name": "Article Two Col",
+          "id": "65834f9d-38a4-cf36-e34c-a2d73f2937cd",
+          "areas": [
+            {
+              "grid": "6",
+              "controls": [
+                {
+                  "value": "<h1 class=\"red\" style=\"text-align: right;\">Discover<br><strong>CIHT Events</strong></h1>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "6",
+              "controls": [
+                {
+                  "value": "<div class=\"EventTopText machidden\" style=\"text-align: left;\"><strong>Meet transportation professionals at a wide</strong><br><strong>range of events including seminars, conferences,</strong><br><strong>lectures, networking opportunities and exhibitions.</strong></div>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "12",
+              "controls": [
+                {
+                  "value": {
+                    "macroAlias": "EventsListingSlider",
+                    "macroParamsDictionary": {
+                      "chooseEvents": "0",
+                      "eventsItem": "",
+                      "regions": "567979,9519,9517,9345,9346,9520,9327,9343,9355,9514,9513,519910,9518,567799,567808,568279,570492,589329",
+                      "bokTerms": "",
+                      "interests": "",
+                      "pastEvents": "0",
+                      "currentEvents": "1",
+                      "upcomingEvents": "1",
+                      "buttonText": "See more events",
+                      "setLinkManually": "0",
+                      "buttonLink": "",
+                      "defaultImage": "520505",
+                      "buttonStyle": "red"
+                    }
+                  },
+                  "editor": {
+                    "alias": "macro",
+                    "view": "macro"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": "<p>   </p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": {},
+          "config": { "class": "whiteSecWrap" }
+        },
+        {
+          "name": "2 equal columns",
+          "id": "7a32b44f-7fc9-d9bb-d2dd-7ba9597fad3b",
+          "areas": [
+            {
+              "grid": "6",
+              "controls": [
+                {
+                  "value": "<h2>View the CIHT Jobs Board</h2>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "6",
+              "controls": [
+                {
+                  "value": "<p>Discover the latest jobs in the sector (Please note date shows publication date not application deadline).</p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": null,
+          "config": null
+        },
+        {
+          "name": "Headline",
+          "id": "e1f1f16c-7599-a2a5-1fc2-f2794a8cf915",
+          "areas": [
+            {
+              "grid": "12",
+              "controls": [
+                {
+                  "value": {
+                    "macroAlias": "ArticlePagesListing",
+                    "macroParamsDictionary": {
+                      "chooseArticles": "0",
+                      "articlesItem": "",
+                      "contentType": "610102",
+                      "interest": "",
+                      "datePublished": "",
+                      "dateEnd": "",
+                      "setLinkManually": "0",
+                      "buttonLink": "",
+                      "buttonText": "Discover the latest jobs",
+                      "defaultImage": "",
+                      "buttonStyle": "blue"
+                    }
+                  },
+                  "editor": {
+                    "alias": "macro",
+                    "view": "macro"
+                  },
+                  "styles": null,
+                  "config": null
+                },
+                {
+                  "value": "<p>   </p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": null,
+          "config": null
+        },
+        {
+          "name": "2 equal columns",
+          "id": "4327ef81-78a5-8e7f-8ee0-444aa1cab74f",
+          "areas": [
+            {
+              "grid": "6",
+              "controls": [
+                {
+                  "value": "<h1 class=\"red\" style=\"text-align: right;\"><span class=\"purple\">Discover</span><br><span class=\"purple\"><strong>CIHT Podcasts</strong></span></h1>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            },
+            {
+              "grid": "6",
+              "controls": [
+                {
+                  "value": "<p><strong>Hear the latest CIHT podcasts and discover leading thought leadership and essential viewpoints.</strong></p>",
+                  "editor": {
+                    "alias": "rte",
+                    "view": "rte"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": {},
+          "config": { "class": "whiteSecWrap" }
+        },
+        {
+          "name": "Headline",
+          "id": "d58e035f-2243-d18e-8046-1de7259987d6",
+          "areas": [
+            {
+              "grid": "12",
+              "controls": [
+                {
+                  "value": {
+                    "macroAlias": "NewsListingSlider",
+                    "macroParamsDictionary": {
+                      "chooseNews": "0",
+                      "newsItem": "",
+                      "regions": "9343",
+                      "bokTerms": "",
+                      "interests": "",
+                      "pastNews": "1",
+                      "currentNews": "1",
+                      "upcomingNews": "0",
+                      "buttonText": "See all CIHT Podcasts",
+                      "setLinkManually": "0",
+                      "buttonLink": "",
+                      "defaultImage": "",
+                      "buttonStyle": "purple"
+                    }
+                  },
+                  "editor": {
+                    "alias": "macro",
+                    "view": "macro"
+                  },
+                  "styles": null,
+                  "config": null
+                }
+              ],
+              "styles": null,
+              "config": null
+            }
+          ],
+          "styles": null,
+          "config": null
+        }
+      ]
+    }
+  ]
+}
