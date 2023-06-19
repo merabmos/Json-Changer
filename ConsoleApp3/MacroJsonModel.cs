@@ -75,7 +75,7 @@ namespace ConsoleApp3
                 Styles = null
             };
 
-            return JsonConvert.SerializeObject(rootObject);
+            return JsonConvert.SerializeObject(rootObject,Formatting.Indented);
         }
     }
 }
