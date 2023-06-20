@@ -11,23 +11,23 @@ namespace ConsoleApp3
 
     public class MacroParams
     {
-        public List<CtaLink> CtaLink { get; set; }
-        public string CssButton { get; set; }
+        public List<CtaLink> ctaLink { get; set; }
+        public string cssButton { get; set; }
     }
 
     public class CtaLink
     {
-        public string Name { get; set; }
-        public string Url { get; set; }
-        public string Icon { get; set; }
-        public bool Published { get; set; }
-        public string Target { get; set; }
+        public string name { get; set; }
+        public string url { get; set; }
+        public string icon { get; set; }
+        public bool published { get; set; }
+        public string target { get; set; }
     }
 
     public class Value
     {
-        public string MacroAlias { get; set; }
-        public MacroParams MacroParamsDictionary { get; set; }
+        public string macroAlias { get; set; }
+        public MacroParams macroParamsDictionary { get; set; }
     }
 
     public class Editor
@@ -38,44 +38,44 @@ namespace ConsoleApp3
 
     public class MacroJsonModel
     {
-        public Value Value { get; set; }
-        public Editor Editor { get; set; }
-        public object Styles { get; set; }
-        public object Config { get; set; }
+        public Value value { get; set; }
+        public Editor editor { get; set; }
+        public object styles { get; set; }
+        public object config { get; set; }
 
         public static string CreateMacroJson(string name, string url, string target)
         {
             MacroJsonModel rootObject = new MacroJsonModel()
             {
-                Value = new Value()
+                value = new Value()
                 {
-                    MacroAlias = "GWCTAButton",
-                    MacroParamsDictionary = new MacroParams()
+                    macroAlias = "GWCTAButton",
+                    macroParamsDictionary = new MacroParams()
                     {
-                        CtaLink = new List<CtaLink>(){
-                    new CtaLink()
-                    {
-                        Name = name,
-                        Url = url,
-                        Published = true,
-                        Icon = "icon_link",
-                        Target = target
+                        ctaLink = new List<CtaLink>(){
+                            new CtaLink()
+                            {
+                               name = name,
+                               url = url,
+                               published = true,
+                               icon = "icon_link",
+                               target = target
                     }
                 },
-                        CssButton = ""
+                        cssButton = ""
                     }
                 },
-                Editor = new Editor()
+                editor = new Editor()
                 {
                     Alias = "macro",
                     View = "macro"
                 },
 
-                Config = null,
-                Styles = null
+                styles = null,
+                config = null
             };
 
-            return JsonConvert.SerializeObject(rootObject,Formatting.Indented);
+            return JsonConvert.SerializeObject(rootObject, Formatting.Indented);
         }
     }
 }
