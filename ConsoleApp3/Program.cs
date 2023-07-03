@@ -27,7 +27,8 @@ try
             var newJson = MacroJsonModel.CreateMacroJson(
        root.Value[0].CtaLink.Value.Name,
        root.Value[0].CtaLink.Value.Url,
-       root.Value[0].CtaLink.Value.Target);
+       root.Value[0].CtaLink.Value.Target,
+       root.Value[0].CssButton?.Value?.ToString() ?? "");
 
             JToken newValue = JToken.Parse(newJson);
 

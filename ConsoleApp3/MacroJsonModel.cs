@@ -11,7 +11,7 @@ namespace ConsoleApp3
 
     public class MacroParams
     {
-        public List<CtaLink> ctaLink { get; set; }
+        public string ctaLink { get; set; }
         public string cssButton { get; set; }
     }
 
@@ -43,8 +43,19 @@ namespace ConsoleApp3
         public object styles { get; set; }
         public object config { get; set; }
 
-        public static string CreateMacroJson(string name, string url, string target)
+        public static string CreateMacroJson(string name, string url, string target, string cssButton)
         {
+            var ctaLinkArray = new List<CtaLink>(){
+                   new CtaLink()
+                    {
+                        name = name,
+                        url = url,
+                        published = true,
+                        icon = "icon_link",
+                        target = target
+                }
+            };
+
             MacroJsonModel rootObject = new MacroJsonModel()
             {
                 value = new Value()
@@ -52,17 +63,8 @@ namespace ConsoleApp3
                     macroAlias = "GWCTAButton",
                     macroParamsDictionary = new MacroParams()
                     {
-                        ctaLink = new List<CtaLink>(){
-                            new CtaLink()
-                            {
-                               name = name,
-                               url = url,
-                               published = true,
-                               icon = "icon_link",
-                               target = target
-                    }
-                },
-                        cssButton = ""
+                        ctaLink = JsonConvert.SerializeObject(ctaLinkArray),
+                        cssButton = cssButton
                     }
                 },
                 editor = new Editor()
@@ -70,7 +72,6 @@ namespace ConsoleApp3
                     Alias = "macro",
                     View = "macro"
                 },
-
                 styles = null,
                 config = null
             };
