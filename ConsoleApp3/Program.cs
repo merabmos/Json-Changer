@@ -5,8 +5,8 @@ using Newtonsoft.Json.Serialization;
 using System.Linq;
 using System.Numerics;
 
-string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-string filePath = desktopPath + "\\New.json";
+string desktopPath = "C:\\Users\\family\\Desktop\\Work Projects\\English Projects\\Projects Folders\\CIHT 11";
+string filePath = desktopPath + "\\changeable.json";
 try
 {
 
@@ -14,21 +14,26 @@ try
 
     JObject obj = JObject.Parse(json);
 
-    var ctaLinks = obj.Descendants()
-            .Where(t => t.Type == JTokenType.Object && t["ctaLink"] != null).ToList();
+    var blogsBoxs = obj.Descendants().OfType<JObject>()
+            .Where(t => t["editor"] != null && t["editor"]["alias"] != null && t["editor"]["alias"].ToString() == "blogsBox").ToList();
 
-    foreach (var ctaLink in ctaLinks)
+    foreach (var blogsBox in blogsBoxs)
     {
-        if (ctaLink != null)
+        if (blogsBox != null)
         {
-            JToken parentNode = ctaLink.Parent.Parent.Parent;
+            JToken parentNode = blogsBox.Parent.Parent.Parent;
             var root = WidgetJsonModel.CreateWidgetModel(JsonConvert.SerializeObject(parentNode, Formatting.Indented));
+            MacroParams macroParams = root.value != null ? new MacroParams()
+            {
+                headline = root.value[0].headline.value,
+                tagsSector = root.value[0].tagsSector.value,
+                tagsBoKTerms = root.value[0].tagsBoKTerms.value,
+                tagsContentLevel = root.value[0].tagsContentLevel.value,
+                tagsContentType = root.value[0].tagsContentType.value,
+                tagsRegion = root.value[0].tagsRegion.value,
+            } : null;
 
-            var newJson = MacroJsonModel.CreateMacroJson(
-       root.Value[0].CtaLink.Value.Name,
-       root.Value[0].CtaLink.Value.Url,
-       root.Value[0].CtaLink.Value.Target,
-       root.Value[0].CssButton?.Value?.ToString() ?? "");
+            var newJson = MacroJsonModel.CreateMacroJson(macroParams);
 
             JToken newValue = JToken.Parse(newJson);
 

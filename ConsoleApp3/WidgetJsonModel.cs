@@ -7,40 +7,40 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    public class CtaLinkValue
+    public class TagsData
     {
-        public string Id { get; set; }
-        public string Name { get; set; }
-        public string Url { get; set; }
-        public string Target { get; set; }
-        public string Hashtarget { get; set; }
-    }
-
-    public class WidgetCtaLink
-    {
-        public CtaLinkValue Value { get; set; }
-        public string DataTypeGuid { get; set; }
-        public string EditorAlias { get; set; }
-        public string EditorName { get; set; }
-    }
-
-    public class CssButtonValue
-    {
-        public object Value { get; set; }
-        public string DataTypeGuid { get; set; }
-        public string EditorAlias { get; set; }
-        public string EditorName { get; set; }
+        public string value { get; set; }
+        public string dataTypeGuid { get; set; }
+        public string editorAlias { get; set; }
+        public string editorName { get; set; }
     }
 
     public class ValueItem
     {
-        public WidgetCtaLink CtaLink { get; set; }
-        public CssButtonValue CssButton { get; set; }
+        public TagsData headline { get; set; }
+        public TagsData tagsAPMTerms { get; set; }
+        public TagsData tagsBoKTerms { get; set; }
+        public TagsData tagsBranches { get; set; }
+        public TagsData tagsContentLevel { get; set; }
+        public TagsData tagsContentType { get; set; }
+        public TagsData tagsMajorProjects { get; set; }
+        public TagsData tagsNonApmProductsResources { get; set; }
+        public TagsData tagsQualifications { get; set; }
+        public TagsData tagsRegion { get; set; }
+        public TagsData tagsSector { get; set; }
+        public TagsData tagsSpecificInterestGroups { get; set; }
     }
-
+    public class BlogsBox
+    {
+        public string alias { get; set; }
+        public object view { get; set; }
+    }
     public class WidgetJsonModel
     {
-        public List<ValueItem> Value { get; set; }
+        public List<ValueItem> value { get; set; }
+        public BlogsBox editor { get; set; }
+        public object styles { get; set; }
+        public object config { get; set; }
         public static WidgetJsonModel CreateWidgetModel(string json)
         {
             WidgetJsonModel rootObject = JsonConvert.DeserializeObject<WidgetJsonModel>(json);

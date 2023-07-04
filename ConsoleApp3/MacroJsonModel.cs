@@ -11,18 +11,17 @@ namespace ConsoleApp3
 
     public class MacroParams
     {
-        public string ctaLink { get; set; }
-        public string cssButton { get; set; }
+        public string displayTo { get; set; }
+        public string numberOfItems { get; set; }
+        public string headline { get; set; }
+        public string theme { get; set; }
+        public string tagsBoKTerms { get; set; }
+        public string tagsContentLevel { get; set; }
+        public string tagsContentType { get; set; }
+        public string tagsRegion { get; set; }
+        public string tagsSector { get; set; }
     }
 
-    public class CtaLink
-    {
-        public string name { get; set; }
-        public string url { get; set; }
-        public string icon { get; set; }
-        public bool published { get; set; }
-        public string target { get; set; }
-    }
 
     public class Value
     {
@@ -43,29 +42,16 @@ namespace ConsoleApp3
         public object styles { get; set; }
         public object config { get; set; }
 
-        public static string CreateMacroJson(string name, string url, string target, string cssButton)
+        public static string CreateMacroJson(MacroParams macroParams)
         {
-            var ctaLinkArray = new List<CtaLink>(){
-                   new CtaLink()
-                    {
-                        name = name,
-                        url = url,
-                        published = true,
-                        icon = "icon_link",
-                        target = target
-                }
-            };
+
 
             MacroJsonModel rootObject = new MacroJsonModel()
             {
                 value = new Value()
                 {
                     macroAlias = "GWCTAButton",
-                    macroParamsDictionary = new MacroParams()
-                    {
-                        ctaLink = JsonConvert.SerializeObject(ctaLinkArray),
-                        cssButton = cssButton
-                    }
+                    macroParamsDictionary = macroParams ?? null
                 },
                 editor = new Editor()
                 {
