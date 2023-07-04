@@ -44,13 +44,11 @@ namespace ConsoleApp3
 
         public static string CreateMacroJson(MacroParams macroParams)
         {
-
-
             MacroJsonModel rootObject = new MacroJsonModel()
             {
                 value = new Value()
                 {
-                    macroAlias = "GWCTAButton",
+                    macroAlias = "GWNewsWidget",
                     macroParamsDictionary = macroParams ?? null
                 },
                 editor = new Editor()
