@@ -14,14 +14,14 @@ try
 
     JObject obj = JObject.Parse(json);
 
-    var blogsBoxs = obj.Descendants().OfType<JObject>()
-            .Where(t => t["editor"] != null && t["editor"]["alias"] != null && t["editor"]["alias"].ToString() == "blogsBox").ToList();
+    var choosedBoxes = obj.Descendants().OfType<JObject>()
+            .Where(t => t["editor"] != null && t["editor"]["alias"] != null && t["editor"]["alias"].ToString() == "newsBox").ToList();
 
-    foreach (var blogsBox in blogsBoxs)
+    foreach (var choosedBox in choosedBoxes)
     {
-        if (blogsBox != null)
+        if (choosedBox != null)
         {
-            JToken parentNode = blogsBox.Parent.Parent.Parent;
+            JToken parentNode = choosedBox;
             var root = WidgetJsonModel.CreateWidgetModel(JsonConvert.SerializeObject(parentNode, Formatting.Indented));
             MacroParams macroParams = root.value != null ? new MacroParams()
             {
