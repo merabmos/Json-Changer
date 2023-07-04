@@ -21,7 +21,7 @@ try
     {
         if (blogsBox != null)
         {
-            JToken parentNode = blogsBox.Parent.Parent.Parent;
+            JToken parentNode = blogsBox;
             var root = WidgetJsonModel.CreateWidgetModel(JsonConvert.SerializeObject(parentNode, Formatting.Indented));
             MacroParams macroParams = root.value != null ? new MacroParams()
             {
@@ -42,8 +42,6 @@ try
     }
 
     File.WriteAllText(filePath, obj.ToString());
-
-    string modifiedJson = obj.ToString();
 }
 catch (Exception ex)
 {

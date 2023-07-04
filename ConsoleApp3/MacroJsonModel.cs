@@ -50,7 +50,7 @@ namespace ConsoleApp3
             {
                 value = new Value()
                 {
-                    macroAlias = "GWCTAButton",
+                    macroAlias = "GWBlogsWidget",
                     macroParamsDictionary = macroParams ?? null
                 },
                 editor = new Editor()
