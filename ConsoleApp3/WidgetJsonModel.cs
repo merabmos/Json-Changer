@@ -30,7 +30,7 @@ namespace ConsoleApp3
         public TagsData tagsSector { get; set; }
         public TagsData tagsSpecificInterestGroups { get; set; }
     }
-    public class BlogsBox
+    public class NewsBox
     {
         public string alias { get; set; }
         public object view { get; set; }
@@ -38,7 +38,7 @@ namespace ConsoleApp3
     public class WidgetJsonModel
     {
         public List<ValueItem> value { get; set; }
-        public BlogsBox editor { get; set; }
+        public NewsBox editor { get; set; }
         public object styles { get; set; }
         public object config { get; set; }
         public static WidgetJsonModel CreateWidgetModel(string json)
