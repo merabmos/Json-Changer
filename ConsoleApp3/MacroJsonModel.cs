@@ -11,6 +11,10 @@ namespace ConsoleApp3
 
     public class MacroParams
     {
+    }
+
+    public class MacroParamsBlogs : MacroParams
+    {
         public string displayTo { get; set; }
         public string numberOfItems { get; set; }
         public string headline { get; set; }
@@ -20,8 +24,8 @@ namespace ConsoleApp3
         public string tagsContentType { get; set; }
         public string tagsRegion { get; set; }
         public string tagsSector { get; set; }
-    }
 
+    }
 
     public class Value
     {
@@ -29,7 +33,7 @@ namespace ConsoleApp3
         public MacroParams macroParamsDictionary { get; set; }
     }
 
-    public class Editor
+    public class Editor 
     {
         public string Alias { get; set; }
         public string View { get; set; }
@@ -37,12 +41,12 @@ namespace ConsoleApp3
 
     public class MacroJsonModel
     {
-        public Value value { get; set; }
-        public Editor editor { get; set; }
+        public Value value { get; set; } 
+        public Editor editor { get; set; } 
         public object styles { get; set; }
         public object config { get; set; }
 
-        public static string CreateMacroJson(MacroParams macroParams)
+        public static string CreateMacroJson(MacroParamsBlogs macroParams)
         {
 
 

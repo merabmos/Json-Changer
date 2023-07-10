@@ -23,7 +23,7 @@ try
         {
             JToken parentNode = blogsBox;
             var root = WidgetJsonModel.CreateWidgetModel(JsonConvert.SerializeObject(parentNode, Formatting.Indented));
-            MacroParams macroParams = root.value != null ? new MacroParams()
+            MacroParamsBlogs macroParams = root.value != null ? new MacroParamsBlogs()
             {
                 headline = root.value[0].headline.value,
                 tagsSector = root.value[0].tagsSector.value,
@@ -31,6 +31,9 @@ try
                 tagsContentLevel = root.value[0].tagsContentLevel.value,
                 tagsContentType = root.value[0].tagsContentType.value,
                 tagsRegion = root.value[0].tagsRegion.value,
+                displayTo = "",
+                numberOfItems = "",
+                theme = ""
             } : null;
 
             var newJson = MacroJsonModel.CreateMacroJson(macroParams);
