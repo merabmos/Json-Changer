@@ -31,9 +31,7 @@ try
                 tagsContentLevel = root.value[0].tagsContentLevel.value,
                 tagsContentType = root.value[0].tagsContentType.value,
                 tagsRegion = root.value[0].tagsRegion.value,
-                displayTo = "",
-                numberOfItems = "",
-                theme = ""
+            
             } : null;
 
             var newJson = MacroJsonModel.CreateMacroJson(macroParams);

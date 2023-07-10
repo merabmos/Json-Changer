@@ -15,10 +15,7 @@ namespace ConsoleApp3
 
     public class MacroParamsBlogs : MacroParams
     {
-        public string displayTo { get; set; }
-        public string numberOfItems { get; set; }
         public string headline { get; set; }
-        public string theme { get; set; }
         public string tagsBoKTerms { get; set; }
         public string tagsContentLevel { get; set; }
         public string tagsContentType { get; set; }
