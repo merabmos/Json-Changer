@@ -15,15 +15,15 @@ namespace ConsoleApp3
 
     public class MacroParamsBlogs : MacroParams
     {
-        public string displayTo { get; set; }
-        public string numberOfItems { get; set; }
-        public string headline { get; set; }
-        public string theme { get; set; }
-        public string tagsBoKTerms { get; set; }
-        public string tagsContentLevel { get; set; }
-        public string tagsContentType { get; set; }
-        public string tagsRegion { get; set; }
-        public string tagsSector { get; set; }
+        public string image { get; set; }
+        public string cropHeightInPixels { get; set; }
+        public string crop { get; set; }
+        public string headLine { get; set; }
+        public string topHeadline { get; set; }
+        public string leftHeadline { get; set; }
+        public string headLineColor { get; set; }
+        public string caption { get; set; }
+        public string ctaLink { get; set; }
 
     }
 
@@ -32,6 +32,7 @@ namespace ConsoleApp3
         public string macroAlias { get; set; }
         public MacroParams macroParamsDictionary { get; set; }
     }
+
 
     public class Editor 
     {
@@ -48,7 +49,6 @@ namespace ConsoleApp3
 
         public static string CreateMacroJson(MacroParamsBlogs macroParams)
         {
-
 
             MacroJsonModel rootObject = new MacroJsonModel()
             {
