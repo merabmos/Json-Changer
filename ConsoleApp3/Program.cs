@@ -15,7 +15,7 @@ try
     JObject obj = JObject.Parse(json);
 
     var blogsBoxs = obj.Descendants().OfType<JObject>()
-            .Where(t => t["editor"] != null && t["editor"]["alias"] != null && t["editor"]["alias"].ToString() == "blogsBox").ToList();
+            .Where(t => t["editor"] != null && t["editor"]["alias"] != null && t["editor"]["alias"].ToString() == "blogsWidget").ToList();
 
     foreach (var blogsBox in blogsBoxs)
     {
@@ -23,7 +23,7 @@ try
         {
             JToken parentNode = blogsBox;
             var root = WidgetJsonModel.CreateWidgetModel(JsonConvert.SerializeObject(parentNode, Formatting.Indented));
-            MacroParamsBlogs macroParams = root.value != null ? new MacroParamsBlogs()
+            MacroParamsBlogs macroParams = new MacroParamsBlogs()
             {
                 headline = root.value[0].headline.value,
                 tagsSector = root.value[0].tagsSector.value,
@@ -31,8 +31,10 @@ try
                 tagsContentLevel = root.value[0].tagsContentLevel.value,
                 tagsContentType = root.value[0].tagsContentType.value,
                 tagsRegion = root.value[0].tagsRegion.value,
-            
-            } : null;
+                displayTo = root.value[0].displayTo.value,
+                numberOfItems = root.value[0].displayTo.value ,
+                theme = root.value[0].theme.value
+            };
 
             var newJson = MacroJsonModel.CreateMacroJson(macroParams);
 

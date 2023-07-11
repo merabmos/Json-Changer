@@ -18,6 +18,9 @@ namespace ConsoleApp3
     public class ValueItem
     {
         public TagsData headline { get; set; }
+        public TagsData displayTo { get; set; }
+        public TagsData numberOfItems { get; set; }
+        public TagsData theme { get; set; }
         public TagsData tagsAPMTerms { get; set; }
         public TagsData tagsBoKTerms { get; set; }
         public TagsData tagsBranches { get; set; }
