@@ -11,20 +11,9 @@ namespace ConsoleApp3
 
     public class MacroParams
     {
-    }
-
-    public class MacroParamsBlogs : MacroParams
-    {
-        public string image { get; set; }
-        public string cropHeightInPixels { get; set; }
-        public string crop { get; set; }
-        public string headLine { get; set; }
-        public string topHeadline { get; set; }
-        public string leftHeadline { get; set; }
-        public string headLineColor { get; set; }
-        public string caption { get; set; }
-        public string ctaLink { get; set; }
-
+        public string buttonText { get; set; }
+        public string form { get; set; }
+        public string formHeadline { get; set; }
     }
 
     public class Value
@@ -36,8 +25,8 @@ namespace ConsoleApp3
 
     public class Editor 
     {
-        public string Alias { get; set; }
-        public string View { get; set; }
+        public string alias { get; set; }
+        public string view { get; set; }
     }
 
     public class MacroJsonModel
@@ -47,20 +36,21 @@ namespace ConsoleApp3
         public object styles { get; set; }
         public object config { get; set; }
 
-        public static string CreateMacroJson(MacroParamsBlogs macroParams)
+        public static string CreateMacroJson(MacroParams macroParams)
         {
+
 
             MacroJsonModel rootObject = new MacroJsonModel()
             {
                 value = new Value()
                 {
-                    macroAlias = "GWBlogsWidget",
+                    macroAlias = "GWCollapsedForm",
                     macroParamsDictionary = macroParams ?? null
                 },
                 editor = new Editor()
                 {
-                    Alias = "macro",
-                    View = "macro"
+                    alias = "macro",
+                    view = "macro"
                 },
                 styles = null,
                 config = null

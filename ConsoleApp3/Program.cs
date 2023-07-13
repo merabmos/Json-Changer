@@ -15,7 +15,7 @@ try
     JObject obj = JObject.Parse(json);
 
     var blogsBoxs = obj.Descendants().OfType<JObject>()
-            .Where(t => t["editor"] != null && t["editor"]["alias"] != null && t["editor"]["alias"].ToString() == "ctaBox").ToList();
+            .Where(t => t["editor"] != null && t["editor"]["alias"] != null && t["editor"]["alias"].ToString() == "collapsedForm").ToList();
 
     foreach (var blogsBox in blogsBoxs)
     {
@@ -23,27 +23,12 @@ try
         {
             JToken parentNode = blogsBox;
             var root = WidgetJsonModel.CreateWidgetModel(JsonConvert.SerializeObject(parentNode, Formatting.Indented));
-            List<CtaLinkData> ctaLinkDatas = new List<CtaLinkData>()
+            
+            MacroParams macroParams = new MacroParams()
             {
-                new CtaLinkData() {
-                    name = root.value[0].ctaLink.value.name,
-                    hashtarget = root.value[0].ctaLink.value.hashtarget,
-                    id = root.value[0].ctaLink.value.id,
-                    target = root.value[0].ctaLink.value.target,
-                    url = root.value[0].ctaLink.value.url
-                }
-            };
-            MacroParamsBlogs macroParams = new MacroParamsBlogs()
-            {
-                caption = root.value[0].caption.value,
-                crop = root.value[0].crop?.value ?? "0",
-                cropHeightInPixels = root.value[0].cropHeightInPixels.value,
-                ctaLink = JsonConvert.SerializeObject(ctaLinkDatas),
-                headLine = root.value[0].headline.value,
-                headLineColor = root.value[0].headLineColor.value,
-                image = root.value[0].image.value,
-                leftHeadline = root.value[0].leftHeadline.value,
-                topHeadline = root.value[0].topHeadline.value
+                buttonText = root.value[0].buttonText.value,
+                form = root.value[0].form?.value ?? "0",
+                formHeadline = root.value[0].formHeadline.value
             };
 
             var newJson = MacroJsonModel.CreateMacroJson(macroParams);
