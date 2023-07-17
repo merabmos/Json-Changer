@@ -5,33 +5,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp3
+namespace ConsoleApp3 { 
+public class TabsHeader
 {
-    public class Data
+    public string value { get; set; }
+    public string dataTypeGuid { get; set; }
+    public string editorAlias { get; set; }
+    public string editorName { get; set; }
+}
+
+public class TabContent
+{
+    public string value { get; set; }
+    public string dataTypeGuid { get; set; }
+    public string editorAlias { get; set; }
+    public string editorName { get; set; }
+}
+    public class Tabs
     {
-        public string value { get; set; }
-        public string dataTypeGuid { get; set; }
-        public string editorAlias { get; set; }
-        public string editorName { get; set; }
-    }
-    public class ValueItem
-    {
-        public Data buttonText { get; set; }
-        public Data form { get; set; }
-        public Data formHeadline { get; set; }
+        public TabsHeader tabHeader { get; set; }
+        public TabContent tabContent { get; set; }
     }
 
     public class WidgetEditor
     {
         public string alias { get; set; }
-        public object view { get; set; }
     }
     public class WidgetJsonModel
     {
-        public List<ValueItem> value { get; set; }
+        public List<Tabs> value { get; set; }
         public WidgetEditor editor { get; set; }
-        public object styles { get; set; }
-        public object config { get; set; }
         public static WidgetJsonModel CreateWidgetModel(string json)
         {
             WidgetJsonModel rootObject = JsonConvert.DeserializeObject<WidgetJsonModel>(json);
